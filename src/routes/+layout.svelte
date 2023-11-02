@@ -11,12 +11,12 @@
     en: 'Title',
     ja: 'タイトル'
   })
-  
+
   $: description = $translate({
     en: 'Description',
     ja: '説明'
   })
-  
+
   $: suffix = $theme === 'dark' ? '-dark' : ''
 </script>
 
