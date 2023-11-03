@@ -25,9 +25,11 @@
 <LocaleAlternates />
 <ThemeManager />
 <svelte:head>
-  <link rel="icon" href="{base}/favicon{suffix}.png" />
-  <link rel="icon" href="{base}/favicon{suffix}.svg" type="image/svg+xml" />
-  <link rel="apple-touch-icon" href="{base}/apple-touch-icon{suffix}.png" />
+  <!-- 
+    <link rel="icon" href="{base}/favicon{suffix}.png" />
+    <link rel="icon" href="{base}/favicon{suffix}.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="{base}/apple-touch-icon{suffix}.png" />
+  -->
   <meta name="description" content={description} />
   <meta property="og:url" content={$page.url.href} />
   <meta property="og:title" content={title} />
