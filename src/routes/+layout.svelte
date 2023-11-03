@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { page } from '$app/stores'
   import { translate } from '$lib/i18n'
   import { ThemeManager, theme } from '@jill64/svelte-dark-theme'
   import { LanguageManager, LocaleAlternates } from '@jill64/svelte-i18n'
@@ -16,6 +17,7 @@
   })
 
   $: suffix = $theme === 'dark' ? '-dark' : ''
+  $: suffix
 </script>
 
 <Toaster />
