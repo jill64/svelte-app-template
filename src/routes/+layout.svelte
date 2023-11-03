@@ -1,6 +1,4 @@
 <script lang="ts">
-  import { base } from '$app/paths'
-  import { page } from '$app/stores'
   import { translate } from '$lib/i18n'
   import { ThemeManager, theme } from '@jill64/svelte-dark-theme'
   import { LanguageManager, LocaleAlternates } from '@jill64/svelte-i18n'
