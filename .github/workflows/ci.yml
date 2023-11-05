@@ -7,6 +7,3 @@ jobs:
     uses: jill64/.github/.github/workflows/run-vitest.yml@main
   test-e2e:
     uses: jill64/.github/.github/workflows/run-playwright.yml@main
-    with:
-      pre-test: export PUBLIC_SENTRY_DSN= && npm run build:pages
-      test-command: export PUBLIC_SENTRY_DSN= && npx playwright test

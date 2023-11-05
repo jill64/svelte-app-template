@@ -2,10 +2,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite dev",
-    "build:pages": "vite build",
-    "preview": "npm run build:pages && vite preview",
+    "build": "vite build",
+    "preview": "npm run build && vite preview",
     "check": "svelte-kit sync && npx svelte-check",
-    "lint": "npx eslint . && export PUBLIC_SENTRY_DSN= && npm run check",
+    "lint": "npx eslint . && npm run check",
     "format": "npx prettier --write . --plugin prettier-plugin-svelte .",
     "test:e2e": "playwright test",
     "test": "vitest"
