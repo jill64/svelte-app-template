@@ -15,7 +15,7 @@
     "@jill64/eslint-config-svelte": "0.0.3",
     "@jill64/prettier-config": "0.0.1",
     "@jill64/playwright-config": "0.0.1",
-    "@jill64/sentry-sveltekit-cloudflare": "1.4.0",
+    "@jill64/sentry-sveltekit-cloudflare": "1.4.1",
     "@jill64/svelte-dark-theme": "2.2.3",
     "@jill64/svelte-i18n": "0.2.6",
     "@jill64/svelte-ogp": "0.1.0",
