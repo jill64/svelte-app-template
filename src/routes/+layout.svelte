@@ -24,7 +24,7 @@
   $: suffix
 </script>
 
-<Toaster />
+<Toaster dark={$theme === 'dark'} />
 <LanguageManager />
 <LocaleAlternates />
 <ThemeManager />
