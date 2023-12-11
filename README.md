@@ -10,7 +10,7 @@
 
 # svelte-app-template
 
-[![ci.yml](https://github.com/jill64/svelte-app-template/actions/workflows/ci.yml/badge.svg)](https://github.com/jill64/svelte-app-template/actions/workflows/ci.yml)
+<!----- BEGIN GHOST DOCS BADGES -----><a href="https://github.com/jill64/svelte-app-template/actions/workflows/ci.yml"><img src="https://github.com/jill64/svelte-app-template/actions/workflows/ci.yml/badge.svg" alt="ci.yml" /></a><!----- END GHOST DOCS BADGES ----->
 
 ⛩️ Svelte Application Template
 
