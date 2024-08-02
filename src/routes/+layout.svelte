@@ -20,8 +20,8 @@
     ja: '説明'
   })
 
+  // eslint-disable-next-line
   $: suffix = $theme === 'dark' ? '-dark' : ''
-  $: suffix
 </script>
 
 <Toaster dark={$theme === 'dark'} />
