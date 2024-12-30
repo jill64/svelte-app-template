@@ -1,30 +1,34 @@
 <script lang="ts">
-  import { translate } from '$lib/i18n'
+  import { i } from '$lib/i18n'
   import {
-    LanguageManager,
-    LocaleAlternates,
     OGP,
     ThemeManager,
     Toaster,
     theme
   } from '@jill64/svelte-suite'
+  import {
+    LanguageManager,
+    LocaleAlternates,
+  } from '@jill64/svelte-suite/i18n'
   import '../app.postcss'
 
-  $: title = $translate({
+  let { children } = $props()
+
+  let title = $derived(i.translate({
     en: 'Title',
     ja: 'タイトル'
-  })
+  }))
 
-  $: description = $translate({
+  let description = $derived(i.translate({
     en: 'Description',
     ja: '説明'
-  })
+  }))
 
   // eslint-disable-next-line
-  $: suffix = $theme === 'dark' ? '-dark' : ''
+  let suffix = theme.isDark ? '-dark' : ''
 </script>
 
-<Toaster dark={$theme === 'dark'} />
+<Toaster dark={theme.isDark} />
 <LanguageManager />
 <LocaleAlternates />
 <ThemeManager />
@@ -34,6 +38,7 @@
   site_name={title}
   image="https://example.com/og-image.png"
 />
+
 <svelte:head>
   <!-- 
     <link rel="icon" href="{base}/favicon{suffix}.png" />
@@ -43,4 +48,5 @@
   <title>{title}</title>
   <meta name="description" content={description} />
 </svelte:head>
-<slot />
+
+{@render children()}
