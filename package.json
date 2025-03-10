@@ -22,7 +22,7 @@
     "@sveltejs/kit": "2.19.0",
     "@sveltejs/vite-plugin-svelte": "5.0.3",
     "@types/bun": "1.2.4",
-    "svelte": "5.19.7",
+    "svelte": "5.22.6",
     "eslint": "9.22.0",
     "typescript": "5.8.2",
     "vite": "6.2.1"
